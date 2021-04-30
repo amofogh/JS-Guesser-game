@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guesser</title>
+    <style>
+      input {
+        width: 80px;
+        height: 80px;
+        font-size: 1.3rem;
+        text-align: center;
+      }
+      button {
+        margin-top: 1rem;
+        width: 100px;
+        height: 25px;
+      }
+
+      h4 {
+        color: royalblue;
+      }
+      #Chances-remain {
+        color: salmon;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Guesser</h1>
+    <h2>Welcome</h2>
+    <h2 id="winorlose"></h2>
+
+    <h4>Your Chance reamains : <span id="Chances-remain">5</span></h4>
+    <br />
+    <input type="number" name="" id="num-input" min="0" value="0" />
+
+    <br />
+    <button id="check" onclick="CheckNum()">Check</button>
+
+    <br />
+    <button id="reload" onclick="location.reload()">Reset</button>
+
+    <p>Check the combo --> blue mean higher and red mean lower .</p>
+  </body>
+  <script src="MyJs.js"></script>
+</html>
